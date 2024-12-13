@@ -1,1 +1,1 @@
-# bootcamp-2024-free-nextjs-amirsabrii
+medicial-project
