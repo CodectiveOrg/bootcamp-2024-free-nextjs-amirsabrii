@@ -1,11 +1,17 @@
+/** @format */
+
 import type { Metadata } from "next";
-import { Noto_Naskh_Arabic } from 'next/font/google'
+
+import { Noto_Naskh_Arabic } from "next/font/google";
+
+import HeaderComponent from "@/components/header/header";
+
 import "./globals.css";
 
-const  notoNaskhArabic =  Noto_Naskh_Arabic({
-  subsets: ['latin' , 'arabic'],
-  display: 'swap',
-})
+const notoNaskhArabic = Noto_Naskh_Arabic({
+  subsets: ["latin", "arabic"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "پروژه پزشکی",
@@ -18,8 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className={notoNaskhArabic.className}>
-      <body>{children}</body>
+    <html lang='fa' dir='rtl' className={notoNaskhArabic.className}>
+      <body>
+        <HeaderComponent />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
