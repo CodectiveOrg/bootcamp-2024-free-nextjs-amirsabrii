@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Noto_Naskh_Arabic } from "next/font/google";
 
 import HeaderComponent from "@/components/header/header";
+import FooterComponent from '@/components/footer/footer'
 
 import "./globals.css";
 
@@ -28,6 +29,10 @@ export default function RootLayout({
       <body>
         <HeaderComponent />
         <main>{children}</main>
+        <p className="tagline">
+          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+        </p>
+        <FooterComponent />
       </body>
     </html>
   );
