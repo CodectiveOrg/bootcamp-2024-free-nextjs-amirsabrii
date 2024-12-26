@@ -9,7 +9,6 @@ import Link from "next/link";
 import style from "./header.module.css";
 
 function HeaderComponent(): ReactElement {
-
   const pathName = usePathname();
 
   const navbarItem = [
@@ -26,9 +25,12 @@ function HeaderComponent(): ReactElement {
           {navbarItem.map((n, i) => {
             return (
               <li>
-                <Link href={`/${n.href}`}  key={i} className={pathName === `/${n.href}` ? style.active : ""}> 
-                 {n.title}
-                 </Link>
+                <Link
+                  href={`/${n.href}`}
+                  key={i}
+                  className={pathName === `/${n.href}` ? style.active : ""}>
+                  {n.title}
+                </Link>
               </li>
             );
           })}
@@ -37,21 +39,6 @@ function HeaderComponent(): ReactElement {
       <button className={style.cta}>ورود | ثبت نام</button>
     </header>
   );
-}
-
-{
-  /* <li>
-            <Link href='/' className={pathName === '/' ? style.active : ''}>خانه</Link>
-          </li>
-          <li>
-            <Link href='/search' className={pathName === '/search' ? style.active : ''}>جستجو</Link>
-          </li>
-          <li>
-            <Link href='/About' className={pathName === '/About' ? style.active : ''}>درباره ما</Link>
-          </li>
-          <li>
-            <Link href='/Contact' className={pathName === '/Contact' ? style.active : ''}>تماس با ما</Link>
-          </li> */
 }
 
 export default HeaderComponent;
