@@ -1,6 +1,6 @@
 /** @format */
 
-import Image from "next/image";
+
 import styles from "./page.module.css";
 import GlobalSearchBoxComponent from "@/components/global-searech-box/global.search.box";
 

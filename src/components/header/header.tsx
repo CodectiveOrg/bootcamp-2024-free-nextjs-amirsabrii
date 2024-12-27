@@ -24,10 +24,9 @@ function HeaderComponent(): ReactElement {
         <ul>
           {navbarItem.map((n, i) => {
             return (
-              <li>
+              <li key={i}>
                 <Link
                   href={`/${n.href}`}
-                  key={i}
                   className={pathName === `/${n.href}` ? style.active : ""}>
                   {n.title}
                 </Link>
