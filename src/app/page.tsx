@@ -1,6 +1,5 @@
 /** @format */
 
-
 import styles from "./page.module.css";
 import GlobalSearchBoxComponent from "@/components/global-searech-box/global.search.box";
 

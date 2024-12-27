@@ -14,8 +14,8 @@ export default function GlobalSearchBoxComponent(): ReactElement {
         <MingcuteSearchLine />
       </div>
       <input
-        type='text'
-        placeholder='نام بیماری، تخصص، پزشک، بیمارستان و ...'
+        type="text"
+        placeholder="نام بیماری، تخصص، پزشک، بیمارستان و ..."
       />
       <div className={styles.divider}></div>
       <div className={styles.suffix}>

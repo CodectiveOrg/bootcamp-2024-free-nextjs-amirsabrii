@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Noto_Naskh_Arabic } from "next/font/google";
 
 import HeaderComponent from "@/components/header/header";
-import FooterComponent from '@/components/footer/footer'
+import FooterComponent from "@/components/footer/footer";
 
 import "./globals.css";
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='fa' dir='rtl' className={notoNaskhArabic.className}>
+    <html lang="fa" dir="rtl" className={notoNaskhArabic.className}>
       <body>
         <HeaderComponent />
         <main>{children}</main>

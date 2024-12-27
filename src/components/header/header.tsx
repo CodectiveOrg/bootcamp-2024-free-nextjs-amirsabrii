@@ -27,7 +27,8 @@ function HeaderComponent(): ReactElement {
               <li key={i}>
                 <Link
                   href={`/${n.href}`}
-                  className={pathName === `/${n.href}` ? style.active : ""}>
+                  className={pathName === `/${n.href}` ? style.active : ""}
+                >
                   {n.title}
                 </Link>
               </li>
