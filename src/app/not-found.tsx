@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import notFoundImage from "@/assets/illustrations/doctor-404.jpg";
 
-// import GlobalSearchBoxComponent from "@/components/global-searech-box/global.search.box";
+import GlobalSearchBoxComponent from "@/components/global-searech-box/global.search.box";
 
 import styles from "./not-found.module.css";
 
@@ -22,9 +22,9 @@ export default function NotFound(): ReactElement {
       <div className={styles.visuals}>
         <Image src={notFoundImage} alt="" />
       </div>
-      {/* <div className={styles.search}>
+      <div className={styles.search}>
         <GlobalSearchBoxComponent />
-      </div> */}
+      </div>
     </div>
   );
 }
