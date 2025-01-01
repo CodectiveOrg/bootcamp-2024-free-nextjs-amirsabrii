@@ -1,5 +1,7 @@
 # Medicial Project
 
+click to visit [Demo](https://medicial.vercel.app/) website.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
