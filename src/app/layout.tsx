@@ -7,6 +7,8 @@ import { Noto_Naskh_Arabic } from "next/font/google";
 import HeaderComponent from "@/components/header/header";
 import FooterComponent from "@/components/footer/footer";
 
+import "@/styles/typography.css"
+
 import "./globals.css";
 
 const notoNaskhArabic = Noto_Naskh_Arabic({
